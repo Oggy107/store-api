@@ -1,8 +1,19 @@
-const errorHandler = (err, req, res, next) => {
-    if (err.status && err.msg)
-        return res.status(err.status).json({success: false, error: err.msg});
+const mongoose = require('mongoose');
 
-    console.log('[ERROR]: ', err);
+const errorHandler = (error, req, res, next) => {
+    console.log('[ERROR]: ', error);
+
+    if (error instanceof mongoose.Error.CastError)
+    {
+        return res.status(404).json({
+            success: false,
+            error: {
+                message: error.message,
+                valueGot: error.value
+            }
+        });
+    }
+
     res.status(500).json({success: false, error: "Internal server error"});
 }
 
