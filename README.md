@@ -1,6 +1,6 @@
 # Store api
 
-*NOTE* Need to deploy this app for others to use it
+*NOTE* Need to deploy this app for others to use it. Deploy app and share code on github. Remove 'create file .env' note and other related notes from README.md because user doesnot need to create or connect to their own database. we will connect to my database with products collection.
 
 ## Technonogies used
 
