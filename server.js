@@ -13,10 +13,6 @@ const app = express();
 const PORT = config.server.port;
 const MONGO_URI = process.env.MONGO_URI;
 
-// app.get("/", (req, res) => {
-//     req.query
-// })
-
 const main = async () => {
     try {
         await connectDB(MONGO_URI);
