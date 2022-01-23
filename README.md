@@ -1,4 +1,4 @@
-# Store api (In Development)
+# Store api
 
 ## Technonogies used
 
@@ -11,7 +11,7 @@
 
 * Clone repository
 ```
-git clone https://github.com/Oggy107/store-api/
+git clone https://github.com/Oggy107/store-api.git
 ```
 
 * Run `npm install` to install dependencies
