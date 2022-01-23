@@ -1,5 +1,7 @@
 # Store api
 
+*NOTE* Need to deploy this app for others to use it
+
 ## Technonogies used
 
 * ExpressJs
